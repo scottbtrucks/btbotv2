@@ -1,0 +1,1 @@
+We're still seeing a "Failed to parse stream string" error even after our stream handling improvements. The error specifically mentions "Invalid code data", which suggests the issue is likely with the format of data coming from OpenRouter when using the Gemini model. We need to further enhance our stream handling to deal with potentially malformed JSON responses. 

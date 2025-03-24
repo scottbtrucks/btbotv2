@@ -1,0 +1,22 @@
+// ERROR DIAGNOSIS START
+const errorDiagnosis = {
+  chatAPI: {
+    issue: "OpenAI API configuration error",
+    detail: "Incorrect parameters passed to openai() function - 'apiKey' not expected in settings object",
+    solution: "Use OpenAI configuration from environment properly"
+  },
+  textToSpeech: {
+    issue: "ElevenLabs API authentication",
+    possibleFix: "Verify the API key is valid and properly formatted"
+  },
+  environmentSetup: {
+    issue: "Multiple API configuration options available",
+    detail: "The .env file has OpenAI API, OpenRouter, and Nano-GPT configurations",
+    solution: "Choose and use a single consistent configuration"
+  },
+  typeErrors: {
+    issue: "TypeScript errors in multiple files",
+    solution: "Add proper type declarations and fix environment variable typing"
+  }
+};
+// ERROR DIAGNOSIS END 

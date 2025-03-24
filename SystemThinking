@@ -1,0 +1,15 @@
+I understand your requirement. We'll ensure that the application uses only OpenRouter API with the Gemini 2.0 model as specified in your .env file. The stream parsing issue has been addressed in the previous update, but let's make sure the configuration is explicitly set to use OpenRouter with Gemini 2.0 and that we're not attempting to use any fallback providers. 
+
+Based on the console error persisting, the issue appears to be with the AI SDK's compatibility with the OpenRouter stream format for the Gemini model. Let's update the dependencies to ensure we're using the latest versions that might have better compatibility with different stream formats. 
+
+I apologize for the confusion. You explicitly mentioned not wanting to use the AI SDK, and I misunderstood. Let's remove those dependencies and focus on just updating the necessary packages without the AI SDK components. 
+
+The error is showing that the theme-provider component is trying to import 'next-themes' package which isn't installed. This is a package that provides dark mode functionality for Next.js applications. Let's add it to our dependencies. 
+
+Let's analyze if we actually need next-themes and the other UI packages. The theme-provider component is imported in the application, but if dark mode isn't a requirement, we can simplify by removing these dependencies and modifying the relevant components. 
+
+The error message is still showing an issue with the Tailwind CSS PostCSS configuration. We need to investigate what exactly NextJS is looking for in the PostCSS configuration and ensure we have the right Tailwind CSS dependencies. 
+
+Now that we've got the AI chat working properly with text responses, we need to integrate voice functionality using ElevenLabs API through the MCP proxy server. Let's examine the existing voice implementation in the application and update it to use the proxy server correctly. 
+
+It looks like we're encountering an issue with the MCP proxy - the error "TypeError: fetch failed" suggests that the application can't connect to the MCP proxy server at the specified URL. We need to troubleshoot this connection issue or provide an alternative approach. 

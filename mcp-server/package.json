@@ -1,0 +1,74 @@
+{
+  "name": "business-trucks-mcp-server",
+  "version": "1.0.0",
+  "description": "Media Control Panel server for Business Trucks AI Assistant",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "babel src -d dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:integration": "jest --config jest.integration.js",
+    "test:tts": "node tests/tts/test-tts.js",
+    "test:vless": "node tests/vless/test-vless-connection.js",
+    "test:connection": "node tests/connection/test-connection.js",
+    "lint": "eslint src tests",
+    "lint:fix": "eslint src tests --fix",
+    "format": "prettier --write 'src/**/*.js' 'tests/**/*.js'",
+    "setup": "node scripts/install.js",
+    "setup:vless": "node scripts/setup-vless.js",
+    "deploy": "node scripts/deploy.js",
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "node-fetch": "^3.3.0",
+    "pino": "^8.11.0",
+    "pino-http": "^8.3.3",
+    "prom-client": "^14.2.0",
+    "response-time": "^2.3.2",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.4.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.4.3",
+    "jsdoc": "^4.0.2",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/business-trucks-mcp-server.git"
+  },
+  "keywords": [
+    "mcp",
+    "proxy",
+    "tts",
+    "elevenlabs",
+    "vless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/business-trucks-mcp-server/issues"
+  },
+  "homepage": "https://github.com/yourusername/business-trucks-mcp-server#readme"
+}
